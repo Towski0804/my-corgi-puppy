@@ -1,0 +1,107 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:before, :after {
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  min-width: 100vw;
+  background: #f4cf0f;
+}
+
+.dog {
+  width: 120px;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.body {
+  height: 300px;
+  background: #f79e38;
+  border-radius: 60px 60px 0 0;
+}
+
+.ears {
+  width: 100%;
+  z-index: -1;
+  justify-content: space-between;
+  display: flex;
+  position: absolute;
+  top: -20px;
+}
+
+.ears:before, .ears:after {
+  content: "";
+  width: 40px;
+  height: 90px;
+  background: #fff;
+  border: 10px solid #f79e38;
+  border-radius: 100% 100% 0 0;
+}
+
+.eyes {
+  width: 20px;
+  height: 30px;
+  background: #fff;
+  border-radius: 10px 10px 0 0;
+  margin: 0 auto;
+  display: block;
+  position: relative;
+  top: 2px;
+}
+
+.eyes:before, .eyes:after {
+  content: "";
+  width: 10px;
+  height: 10px;
+  background: #000;
+  border-radius: 10px;
+  position: absolute;
+  bottom: 2px;
+}
+
+.eyes:before {
+  left: -13px;
+}
+
+.eyes:after {
+  right: -13px;
+}
+
+.beard {
+  width: 50px;
+  height: 60px;
+  background: #fff;
+  border-radius: 20px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.mouth {
+  width: 30px;
+  height: 14px;
+  background: #000;
+  border-radius: 0 0 15px 15px;
+  margin: auto;
+  position: absolute;
+  top: 20px;
+  left: 0;
+  right: 0;
+}
+
+.beard:before {
+  width: 30px;
+  height: 14px;
+  background: #000;
+  border-radius: 0 0 15px 15px;
+  position: absolute;
+}
+
+/*# sourceMappingURL=index.116a5dd3.css.map */
