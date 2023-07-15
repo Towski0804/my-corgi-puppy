@@ -1,16 +1,17 @@
-* {
+const style = `
+.wrapper * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-*::before {
+.wrapper *::before {
   box-sizing: border-box;
 }
-*::after {
+.wrapper *::after {
   box-sizing: border-box;
 }
 #wrapper {
-  min-height: 100vh;
+  min-height: 50vh;
   min-width: 100vw;
   background: #f4cf0f;
   position: relative;
@@ -252,3 +253,6 @@
     transform: scale(1.2, 0.2);
   }
 }
+  `;
+
+export default style;
